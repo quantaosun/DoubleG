@@ -5,9 +5,11 @@
 
 ### What it does
 
-#### Imagine you have a protein-ligand docked complex or crystal structure and you want to quantify the binding affinity with a much better method above docking scores. Such docking could be come from the pl3 procedure.
+#### Imagine you have a protein-ligand docked complex or crystal structure and you want to quantify the binding affinity with a much better method above docking scores. 
 
-https://github.com/quantaosun/pl3
+What we could do is the so called alchemical free energy calculation, since this repo is more about operation rather than theory introduction, you could head to, next we will just call it absolute binding free energy calculation (ABFE) or just calculation for simplicity, ABFE was used to clarify with the relative binding free energy calculations like what Schrodinger's FEP-Plus has provided. 
+
+ABFE calculations have numerous potential applications, such as evaluating the reliability of docked poses. If a researcher is unsure which of three docked poses is the most likely correct pose, each can undergo ABFE calculations, and the one with the best score can be considered the most probable candidate. For a case study of this approach, see https://pubs.acs.org/doi/10.1021/jacs.6b11467.
 
 In practical terms, setting up the workflow has proven to be challenging for many due to the tedious procedures and expertise required. To address this, we introduce a procedure called doubleG, which involves two calculations using Gromacs. One calculation focuses on the protein-ligand system, while the other focuses solely on the ligand.
 
