@@ -13,7 +13,7 @@ Taking a PDB bank structure 3HTB as an example, its native ligand is JZ4
 5. Modify /toppar/LIG.itp and /toppar/PROA.itp, refer to ***PROA_or_LIG.itp_modification*** folder
 6. convert PROA.gro or ligand.gro to pdb in pymol, then open in Maestro to determine the [intermolecular_interactions], ie the restrain needed to be added at last section of topol.top, refer to ***Intermolecular_restrain*** folder
 7, modify the solvent /MDP/PROD/ (When running lambda 1.0-1.9 there is an error about rlist or simulated small molecule shows longer bonds and degree than defined cutoff, i.e., rlist ), refer to ***Known_issues*** folder
-8. Run the simulation, refer to ***DoubleG*** folder
+8. Run the simulation, refer to ***DoubleG*** folder and ***Different_platforms***
 9. Analysis, refer to ***Analysis*** folder and ***Intermolecular_restrain*** folder.
 
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/ecc4ee2a-4d84-4c82-8489-57b4f8d3e62b">
