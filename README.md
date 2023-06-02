@@ -49,6 +49,7 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 
 
 ### Where to start with
-<img width="651" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/37e91369-f263-4167-8eb4-d400eb54606f">
+<img width="642" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/d73c7b8f-8b8f-460e-8890-8f80236dbb5d">
+
 
 
