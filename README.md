@@ -4,11 +4,12 @@
 
 I am not developing any new software, considering the abundance of existing options. Instead, I offer a clear and streamlined workflow that integrates reliable online web services with the widely used Gromacs platform. This approach addresses the critical challenge of determining absolute free energy of binding in protein-small molecule dynamics simulations, especially during the early stages of drug discovery. Traditional methods relying solely on the similarity of small molecules are often insufficient for accurately calculating relative binding free energies, such as FEP. By adopting this repeatable and easy-to-set-up workflow, we simplify the complex process that typically requires skilled operators, multiple steps, and substantial computing power. Consequently, it helps overcome the challenges associated with its application while reducing costs.
 
-### Prerequest: 
+### Prerequisites:
 
-1. Account of Charmm GUI webservice :https://www.charmm-gui.org/
-2. Gromacs installed on a Unix-like environemnt with > 8 CPU (decent CPU) or
-3. Gromacs installed on a Unix-like environemnt with > 8 CPU + GPU (> Nvidia 3060 or equvalent)
+Create an account on the Charmm GUI web service by visiting https://www.charmm-gui.org/.
+Install Gromacs on a Unix-like environment with a minimum of 8 CPUs. Ideally, a decent CPU configuration is recommended.
+If available, install Gromacs on a Unix-like environment with more than 8 CPUs and a GPU, preferably Nvidia 3060 or an equivalent model. This configuration enhances computational performance.
+Note: Please ensure you fulfill these prerequisites before proceeding with the subsequent steps.
 
 ### The theoritical backgroud is solid but the actual setting up has been remaining extremely challenging 
 
