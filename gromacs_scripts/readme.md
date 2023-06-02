@@ -1,4 +1,4 @@
-
+### Note, all mdp files provided are not reay to use, you need to use them as template and with the help of the scirpt below to generate multiple mdp files for each of them, replacing $LAMBDA$ by correct values that essentially controls the free energy calculation process.
 Change the lambda desity of solvent
 write 4 individual mdp file for enmin, nvt, npt, and prod
 change the 20 lambda plan to 30, also include the bonded-lambda, which allwo small molecule to be solt between bonded atoms.
