@@ -53,7 +53,7 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 
 ### Summary
 
-#### 1. 3HTB as a complex go through the solutuion builder workflow, refer to **CharmmGUI_Input_Generator** folder
+#### 1. 3HTB as a complex go through the solutuion builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
 #### 2. JZ4 as a ligand go through the solution builder workflow.
 #### 3. Build ABF folders and copy the two /gromacs folder to /new/complex and /new/solvent respectively
 #### 4. copy the 3.sh and 4.pbs into the two folder as well
