@@ -1,6 +1,7 @@
 # DoubleG
 
-<img width="284" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/2f96d6b9-c63c-48fa-90a4-01afb2f3b07c">
+<img width="640" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/c2c3c449-0c10-4a1b-aac1-95cd8a3bae46">
+
 
 ### Imperfect situation
 
@@ -21,7 +22,8 @@ Note: Please ensure you fulfill these prerequisites before proceeding with the s
 
 Several tutorials are available online for reference. However, based on my understanding, these workflows often demand a high level of expertise to utilize effectively and can be time-consuming to learn and implement repeatedly.
 
-<img width="909" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/88777929-321c-475a-a4f9-b504e69d6903">
+<img width="971" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/6af81d69-c014-4ea4-9cf5-f72c7b2c1fc5">
+
 
 
 ### This procedure
@@ -43,8 +45,10 @@ In this context, "G" also represents the Gbbis free energy, where **G solvent + 
 
 Therefore, we refer to this approach as "Double G" for easier memorization and to distinguish it from other methods.
 
-<img width="615" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/72839200-65b5-4ac5-aed0-9f08808d2a17">
+<img width="778" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/5f9d217e-e118-4239-baae-06db70f35461">
+
 
 ### Where to start with
-<img width="640" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/34eff8e8-7da9-4a06-9e32-b9700f9671ad">
+<img width="651" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/37e91369-f263-4167-8eb4-d400eb54606f">
+
 
