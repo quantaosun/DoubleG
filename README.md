@@ -21,6 +21,16 @@ The absolute free energy of binding plays a crucial role in protein-small molecu
 
 On a practical sense, the seting up has been quite a headache for many given the tedious procedure and expertise it requires. Here we introduce a procedure called doubleG which means two calculation with Gromacs. One of them involves protein-ligand system and the other involves only ligand.
 
+We will perform two calculations: one for the protein-small molecule system and another for the isolated small molecule system.
+
+In each calculation, the small molecule in the corresponding system will be gradually "eliminated," allowing us to obtain the energy changes in the system after removing the small molecule. The difference between these two values represents the binding free energy between the small molecule and the protein.
+
+Both calculations will be conducted using Gromacs software.
+
+In this context, "G" also represents the Gbbis free energy, where G solvent + G complex are the two data points we need to simulate.
+
+Therefore, we refer to this approach as "Double G" for easier memorization and to distinguish it from other methods.
+
 <img width="615" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/72839200-65b5-4ac5-aed0-9f08808d2a17">
 
 ### Platform supported: It is quite flexible, if you have GPU good, but if not, it also works just a bit slow.
