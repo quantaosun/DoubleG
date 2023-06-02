@@ -1,0 +1,9 @@
+* SET NIONTYPES = 1
+* SET NPOSTOT = 1
+* SET NNEGTOT = 1
+* SET NIONTOT = 2
+*  DATE:     4/22/23     19:31:58      CREATED BY USER: apache
+*
+         2  EXT
+         1         1  POT       POT            -5.0614007087       11.7725122016       -0.8299237492  IONS      1               1.0000000000
+         2         2  CLA       CLA            11.6560746993       -5.5971712274      -13.3459935177  IONS      2              -1.0000000000

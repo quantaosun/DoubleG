@@ -1,0 +1,1 @@
+{"systype":null,"dimensions":["79","79","79","90.0","90.0","90.0"],"input":["namd","gromacs","openmm"],"forcefield":{"type":"c36m","files":["default"],"custom":["jz4\/jz4.rtf","jz4\/jz4.prm"]},"hmr":false}
