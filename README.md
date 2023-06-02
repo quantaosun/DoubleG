@@ -18,7 +18,7 @@ Several tutorials are available online for reference. However, based on my under
 <img width="909" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/88777929-321c-475a-a4f9-b504e69d6903">
 
 
-### Double G calculaion
+### This procedure
 
 On a practical sense, the seting up has been quite a headache for many given the tedious procedure and expertise it requires. Here we introduce a procedure called doubleG which means two calculation with Gromacs. One of them involves protein-ligand system and the other involves only ligand.
 
@@ -34,7 +34,4 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 
 <img width="615" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/72839200-65b5-4ac5-aed0-9f08808d2a17">
 
-### Platform supported: It is quite flexible, if you have GPU good, but if not, it also works just a bit slow.
 
-1. CPU only
-2. GPU+CPU
