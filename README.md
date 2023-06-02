@@ -2,9 +2,7 @@
 
 <img width="284" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/2f96d6b9-c63c-48fa-90a4-01afb2f3b07c">
 
-### I am not developing any new software on top of already so many, but I do provide a clear workflow that intergrates the good online webservice and widely used Gromacs to tacle the important free energy problem in a repeatable and easy-to-set up manner.
-
-The absolute free energy of binding plays a crucial role in protein-small molecule dynamics simulations, particularly in early-stage drug discovery, when the similarity of small molecules is insufficient for calculating relative binding free energies like FEP. However, this calculation process is highly complex, requiring skilled operators, multiple steps, and significant computing power, thus posing challenges in its application and often resulting in high costs.
+I am not developing any new software, considering the abundance of existing options. Instead, I offer a clear and streamlined workflow that integrates reliable online web services with the widely used Gromacs platform. This approach addresses the critical challenge of determining absolute free energy of binding in protein-small molecule dynamics simulations, especially during the early stages of drug discovery. Traditional methods relying solely on the similarity of small molecules are often insufficient for accurately calculating relative binding free energies, such as FEP. By adopting this repeatable and easy-to-set-up workflow, we simplify the complex process that typically requires skilled operators, multiple steps, and substantial computing power. Consequently, it helps overcome the challenges associated with its application while reducing costs.
 
 ### Prerequest: 
 
