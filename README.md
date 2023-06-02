@@ -1,6 +1,6 @@
 # DoubleG
 
-<img width="640" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/c2c3c449-0c10-4a1b-aac1-95cd8a3bae46">
+<img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/ecc4ee2a-4d84-4c82-8489-57b4f8d3e62b">
 
 
 ### Imperfect situation
