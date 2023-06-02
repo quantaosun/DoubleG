@@ -1,5 +1,11 @@
 # DoubleG
 
+<img width="284" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/2f96d6b9-c63c-48fa-90a4-01afb2f3b07c">
+
+### I am not developing any new software on top of already so many, but I do provide a clear workflow that intergrates the good online webservice and widely used Gromacs to tacle the important free energy problem in a repeatable and easy-to-set up manner.
+
+The absolute free energy of binding plays a crucial role in protein-small molecule dynamics simulations, particularly in early-stage drug discovery, when the similarity of small molecules is insufficient for calculating relative binding free energies like FEP. However, this calculation process is highly complex, requiring skilled operators, multiple steps, and significant computing power, thus posing challenges in its application and often resulting in high costs.
+
 ### Prerequest: 
 
 1. Account of Charmm GUI webservice :https://www.charmm-gui.org/
@@ -12,10 +18,6 @@ There are some tutorials online but to the best of my knowledge these workflow r
 
 <img width="909" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/88777929-321c-475a-a4f9-b504e69d6903">
 
-
-### I am not developing any new software on top of already so many, but I do provide a clear workflow that intergrates the good online webservice and widely used Gromacs to tacle the important free energy problem in a repeatable and easy-to-set up manner.
-
-The absolute free energy of binding plays a crucial role in protein-small molecule dynamics simulations, particularly in early-stage drug discovery, when the similarity of small molecules is insufficient for calculating relative binding free energies like FEP. However, this calculation process is highly complex, requiring skilled operators, multiple steps, and significant computing power, thus posing challenges in its application and often resulting in high costs.
 
 ### Double G calculaion
 
