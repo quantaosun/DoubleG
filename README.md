@@ -44,8 +44,8 @@ By combining the strengths of CharmmGui, Gromacs, and GPU computing, this workfl
 In this context, "G" also represents the Gbbis free energy, where **G solvent + G complex** are the two data points we need to simulate.
 
 Therefore, we refer to this approach as "Double G" for easier memorization and to distinguish it from other methods.
+<img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/f79c176d-7d52-4b69-9b3b-6dfe4060b2db">
 
-<img width="778" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/5f9d217e-e118-4239-baae-06db70f35461">
 
 
 ### Where to start with
