@@ -11,9 +11,9 @@ Install Gromacs on a Unix-like environment with a minimum of 8 CPUs. Ideally, a 
 If available, install Gromacs on a Unix-like environment with more than 8 CPUs and a GPU, preferably Nvidia 3060 or an equivalent model. This configuration enhances computational performance.
 Note: Please ensure you fulfill these prerequisites before proceeding with the subsequent steps.
 
-### The theoritical backgroud is solid but the actual setting up has been remaining extremely challenging 
+### Previous tutorials
 
-There are some tutorials online but to the best of my knowledge these workflow requires a high level of expertise to use and takes quite long time to learn and even repeat.
+Several tutorials are available online for reference. However, based on my understanding, these workflows often demand a high level of expertise to utilize effectively and can be time-consuming to learn and implement repeatedly.
 
 <img width="909" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/88777929-321c-475a-a4f9-b504e69d6903">
 
