@@ -3,7 +3,9 @@
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/ecc4ee2a-4d84-4c82-8489-57b4f8d3e62b">
 
 
-### Imperfect situation
+### What it does
+
+#### Imagine you have a protein-ligand docked complex or crystal structure and you want to quantify the binding affinity with a much better method above docking scores. Such docking could be come from the pl3 procedure.
 
 In practical terms, setting up the workflow has proven to be challenging for many due to the tedious procedures and expertise required. To address this, we introduce a procedure called doubleG, which involves two calculations using Gromacs. One calculation focuses on the protein-ligand system, while the other focuses solely on the ligand.
 
@@ -27,7 +29,6 @@ Several tutorials are available online for reference. However, based on my under
 <img width="971" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/6af81d69-c014-4ea4-9cf5-f72c7b2c1fc5">
 
 
-
 ### This procedure
 
 The calculation of absolute binding free energy based on explicit solvent is the focus of this workflow.
@@ -49,6 +50,8 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/f79c176d-7d52-4b69-9b3b-6dfe4060b2db">
 
 ### Where to start with
+The stability or repeatibility of this workflow is first based on the first input generation step, which requires you to go through two independent solution builder process on CharmmGUI.
+
 <img width="642" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/d73c7b8f-8b8f-460e-8890-8f80236dbb5d">
 
 ### Summary
