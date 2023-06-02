@@ -1,3 +1,5 @@
+## Google colab
+This is a beta version, it is possible we install Gromacs on google colab, and run all the simulation there, but it did not really use charmm gui but generate all the necessary Gromacs inputs from scratch, then adapt them to ABF calculation. It is great for learning purpose but may be not as efficient as the DoubleG procedure. 
 
 ## On a 7 cpu cluster with non-mpi version of Gromacs, with GPU
 ```
