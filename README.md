@@ -1,6 +1,10 @@
 # DoubleG
 
-### Prerequest: Account of Charmm GUI webservice.
+### Prerequest: 
+
+1. Account of Charmm GUI webservice :https://www.charmm-gui.org/
+2. Gromacs installed on a Unix-like environemnt with > 8 CPU (decent CPU) or
+3. Gromacs installed on a Unix-like environemnt with > 8 CPU + GPU (> Nvidia 3060 or equvalent)
 
 ### The theoritical backgroud is solid but the actual setting up has been remaining extremely challenging 
 
