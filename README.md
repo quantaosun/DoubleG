@@ -28,7 +28,7 @@ In each calculation, the small molecule in the corresponding system will be grad
 
 Both calculations will be conducted using Gromacs software.
 
-In this context, "G" also represents the Gbbis free energy, where G solvent + G complex are the two data points we need to simulate.
+In this context, "G" also represents the Gbbis free energy, where **G solvent + G complex** are the two data points we need to simulate.
 
 Therefore, we refer to this approach as "Double G" for easier memorization and to distinguish it from other methods.
 
