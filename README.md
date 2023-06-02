@@ -1,11 +1,25 @@
 # DoubleG
 
+### Outline Summary 
+
+#### Imagine you have a protein-ligand docked complex or crystal structure and you want to quantify the binding affinity with a much better method above docking scores. 
+
+Taking a PDB bank structure 3HTB as an example, its native ligand is JZ4
+
+1. 3HTB as a complex go through the solutuion builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
+2. JZ4 as a ligand go through the solution builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
+3. Build ABF folders and copy the two /gromacs folder to /new/complex and /new/solvent respectively, refer to ***DoubleG*** folder
+4. copy the 3.sh and 4.pbs into the two folder as well,  ***Job_control*** folder
+5. Modify /toppar/LIG.itp and /toppar/PROA.itp, refer to ***PROA_or_LIG.itp_modification*** folder
+6. convert PROA.gro or ligand.gro to pdb in pymol, then open in Maestro to determine the [intermolecular_interactions], ie the restrain needed to be added at last section of topol.top, refer to ***Intermolecular_restrain*** folder
+7, modify the solvent /MDP/PROD/ (When running lambda 1.0-1.9 there is an error about rlist or simulated small molecule shows longer bonds and degree than defined cutoff, i.e., rlist ), refer to ***Known_issues*** folder
+8. Run the simulation, refer to ***DoubleG*** folder
+9. Analysis, refer to ***Analysis*** folder and ***Intermolecular_restrain*** folder.
+
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/ecc4ee2a-4d84-4c82-8489-57b4f8d3e62b">
 
 
-### What it does
-
-#### Imagine you have a protein-ligand docked complex or crystal structure and you want to quantify the binding affinity with a much better method above docking scores. 
+### Backgroud and introduction
 
 What we could do is the so called alchemical free energy calculation, since this repo is more about operation rather than theory introduction, you could have a look at https://pubs.rsc.org/en/content/articlelanding/2021/sc/d1sc03472c, next we will just call it absolute binding free energy calculation (ABFE) or just calculation for simplicity, ABFE was used to clarify with the relative binding free energy calculations like what Schrodinger's FEP-Plus has provided. 
 
@@ -59,15 +73,7 @@ The stability or repeatibility of this workflow is first based on the first inpu
 
 <img width="642" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/d73c7b8f-8b8f-460e-8890-8f80236dbb5d">
 
-### Summary
 
-1. 3HTB as a complex go through the solutuion builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
-2. JZ4 as a ligand go through the solution builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
-3. Build ABF folders and copy the two /gromacs folder to /new/complex and /new/solvent respectively, refer to ***DoubleG*** folder
-4. copy the 3.sh and 4.pbs into the two folder as well,  ***Job_control*** folder
-5. Modify /toppar/LIG.itp and /toppar/PROA.itp, refer to ***PROA_or_LIG.itp_modification*** folder
-6. convert PROA.gro or ligand.gro to pdb in pymol, then open in Maestro to determine the [intermolecular_interactions], ie the restrain needed to be added at last section of topol.top, refer to ***Intermolecular_restrain*** folder
-7, modify the solvent /MDP/PROD/ (When running lambda 1.0-1.9 there is an error about rlist or simulated small molecule shows longer bonds and degree than defined cutoff, i.e., rlist ), refer to ***Known_issues*** folder
 
 
 
