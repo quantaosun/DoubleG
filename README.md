@@ -9,7 +9,7 @@
 
 What we could do is the so called alchemical free energy calculation, since this repo is more about operation rather than theory introduction, you could have a look at https://pubs.rsc.org/en/content/articlelanding/2021/sc/d1sc03472c, next we will just call it absolute binding free energy calculation (ABFE) or just calculation for simplicity, ABFE was used to clarify with the relative binding free energy calculations like what Schrodinger's FEP-Plus has provided. 
 
-ABFE calculations have numerous potential applications, such as evaluating the reliability of docked poses. If a researcher is unsure which of three docked poses is the most likely correct pose, each can undergo ABFE calculations, and the one with the best score can be considered the most probable candidate. For a case study of this approach, see https://pubs.acs.org/doi/10.1021/jacs.6b11467, which mostly discuss affinity. Another good reading is 
+ABFE calculations have numerous potential applications, such as evaluating the reliability of docked poses. If a researcher is unsure which of three docked poses is the most likely correct pose, each can undergo ABFE calculations, and the one with the best score can be considered the most probable candidate. For a case study of this approach, see https://pubs.acs.org/doi/10.1021/jacs.6b11467, another good reading is https://pubs.acs.org/doi/10.1021/acs.jcim.0c00815
 
 In practical terms, setting up the workflow has proven to be challenging for many due to the tedious procedures and expertise required. To address this, we introduce a procedure called doubleG, which involves two calculations using Gromacs. One calculation focuses on the protein-ligand system, while the other focuses solely on the ligand.
 
@@ -36,6 +36,7 @@ Several tutorials are available online for reference. However, based on my under
 ### This procedure
 
 The calculation of absolute binding free energy based on explicit solvent is the focus of this workflow.
+CharmmGUI has long been used for simple solution simulations, as well as ABFE calculation for NAMD, Amber and Genesis, but to when this repo was created there is no readily available module suporting the widely use Gromacs to do so.
 
 Architecture Overview:
 In this Double G workflow, there are three key components: CharmmGui, Gromacs, and GPU.
