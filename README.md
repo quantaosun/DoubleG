@@ -56,10 +56,10 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 1. 3HTB as a complex go through the solutuion builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
 2. JZ4 as a ligand go through the solution builder workflow, refer to ***CharmmGUI_Input_Generator*** folder
 3. Build ABF folders and copy the two /gromacs folder to /new/complex and /new/solvent respectively, refer to ***DoubleG*** folder
-4. copy the 3.sh and 4.pbs into the two folder as well
-5. Modify /toppar/LIG.itp and /toppar/PROA.itp, refer to ***CharmmGUI_Input_Generator*** folder
-6. convert PROA.gro or ligand.gro to pdb in pymol, then open in Maestro to determine the [intermolecular_interactions], ie the restrain needed to be added at last section of topol.top, refer to ***CharmmGUI_Input_Generator*** folder
-7, modify the solvent /MDP/PROD/ (When running lambda 1.0-1.9 there is an error about rlist or simulated small molecule shows longer bonds and degree than defined cutoff, i.e., rlist ), refer to ***CharmmGUI_Input_Generator*** folder
+4. copy the 3.sh and 4.pbs into the two folder as well,  ***Job_control*** folder
+5. Modify /toppar/LIG.itp and /toppar/PROA.itp, refer to ***PROA_or_LIG.itp_modification*** folder
+6. convert PROA.gro or ligand.gro to pdb in pymol, then open in Maestro to determine the [intermolecular_interactions], ie the restrain needed to be added at last section of topol.top, refer to ***Intermolecular_restrain*** folder
+7, modify the solvent /MDP/PROD/ (When running lambda 1.0-1.9 there is an error about rlist or simulated small molecule shows longer bonds and degree than defined cutoff, i.e., rlist ), refer to ***Known_issues*** folder
 
 
 
