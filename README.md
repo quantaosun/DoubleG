@@ -2,7 +2,13 @@
 
 <img width="284" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/2f96d6b9-c63c-48fa-90a4-01afb2f3b07c">
 
-I am not developing any new software, considering the abundance of existing options. Instead, I offer a clear and streamlined workflow that integrates reliable online web services with the widely used Gromacs platform. This approach addresses the critical challenge of determining absolute free energy of binding in protein-small molecule dynamics simulations, especially during the early stages of drug discovery. Traditional methods relying solely on the similarity of small molecules are often insufficient for accurately calculating relative binding free energies, such as FEP. By adopting this repeatable and easy-to-set-up workflow, we simplify the complex process that typically requires skilled operators, multiple steps, and substantial computing power. Consequently, it helps overcome the challenges associated with its application while reducing costs.
+### Imperfect situation
+
+In practical terms, setting up the workflow has proven to be challenging for many due to the tedious procedures and expertise required. To address this, we introduce a procedure called doubleG, which involves two calculations using Gromacs. One calculation focuses on the protein-ligand system, while the other focuses solely on the ligand.
+
+Instead of developing new software, I provide a clear and streamlined workflow that integrates reliable online web services with the widely used Gromacs platform. This workflow specifically addresses the critical challenge of determining the absolute free energy of binding in protein-small molecule dynamics simulations, particularly in the early stages of drug discovery. Traditional methods that rely solely on the similarity of small molecules often fall short in accurately calculating relative binding free energies, such as FEP.
+
+By adopting this repeatable and easy-to-set-up workflow, we aim to simplify the complex process that typically requires skilled operators, multiple steps, and substantial computing power. Consequently, it helps overcome the challenges associated with its application while reducing costs.
 
 ### Prerequisites:
 
@@ -20,13 +26,18 @@ Several tutorials are available online for reference. However, based on my under
 
 ### This procedure
 
-On a practical sense, the seting up has been quite a headache for many given the tedious procedure and expertise it requires. Here we introduce a procedure called doubleG which means two calculation with Gromacs. One of them involves protein-ligand system and the other involves only ligand.
+The calculation of absolute binding free energy based on explicit solvent is the focus of this workflow.
 
-We will perform two calculations: one for the protein-small molecule system and another for the isolated small molecule system.
+Architecture Overview:
+In this Double G workflow, there are three key components: CharmmGui, Gromacs, and GPU.
 
-In each calculation, the small molecule in the corresponding system will be gradually "eliminated," allowing us to obtain the energy changes in the system after removing the small molecule. The difference between these two values represents the binding free energy between the small molecule and the protein.
+CharmmGui: This graphical user interface plays a crucial role in preparing the necessary inputs for the calculations. Compared to command-line based methods, CharmmGui offers a user-friendly interface, making it easier to learn and utilize effectively.
 
-Both calculations will be conducted using Gromacs software.
+Gromacs: One of the most widely used open-source molecular simulation packages, Gromacs, forms the core of the free energy calculations. It provides robust and reliable algorithms for performing these calculations efficiently.
+
+GPU Utilization: To enhance computational efficiency and save time, the workflow takes advantage of GPU computing. By leveraging the power of GPUs, the calculations can be accelerated, leading to faster results.
+
+By combining the strengths of CharmmGui, Gromacs, and GPU computing, this workflow aims to provide an accessible and efficient solution for absolute binding free energy calculations.
 
 In this context, "G" also represents the Gbbis free energy, where **G solvent + G complex** are the two data points we need to simulate.
 
