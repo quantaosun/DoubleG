@@ -45,4 +45,6 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 
 <img width="615" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/72839200-65b5-4ac5-aed0-9f08808d2a17">
 
+### Where to start with
+<img width="640" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/34eff8e8-7da9-4a06-9e32-b9700f9671ad">
 
