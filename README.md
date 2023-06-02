@@ -48,10 +48,18 @@ In this context, "G" also represents the Gbbis free energy, where **G solvent + 
 Therefore, we refer to this approach as "Double G" for easier memorization and to distinguish it from other methods.
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/f79c176d-7d52-4b69-9b3b-6dfe4060b2db">
 
-
-
 ### Where to start with
 <img width="642" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/d73c7b8f-8b8f-460e-8890-8f80236dbb5d">
+
+### Summary
+
+#### 1. 3HTB as a complex go through the solutuion builder workflow
+#### 2. JZ4 as a ligand go through the solution builder workflow.
+#### 3. Build ABF folders and copy the two /gromacs folder to /new/complex and /new/solvent respectively
+#### 4. copy the 3.sh and 4.pbs into the two folder as well
+#### 5. Modify /toppar/LIG.itp and /toppar/PROA.itp
+#### 6. convert PROA.gro or ligand.gro to pdb in pymol, then open in Maestro to determine the [intermolecular_interactions], ie the restrain needed to be added at last section of topol.top
+#### 7, modify the solvent /MDP/PROD/ (When running lambda 1.0-1.9 there is an error about rlist or simulated small molecule shows longer bonds and degree than defined cutoff, i.e., rlist )
 
 
 
