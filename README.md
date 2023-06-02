@@ -13,9 +13,11 @@ By adopting this repeatable and easy-to-set-up workflow, we aim to simplify the 
 
 ### Prerequisites:
 
-Create an account on the Charmm GUI web service by visiting https://www.charmm-gui.org/.
-Install Gromacs on a Unix-like environment with a minimum of 8 CPUs. Ideally, a decent CPU configuration is recommended.
+1. Create an account on the Charmm GUI web service by visiting https://www.charmm-gui.org/.
+
+2. Install Gromacs on a Unix-like environment with a minimum of 8 CPUs. Ideally, a decent CPU configuration is recommended.
 If available, install Gromacs on a Unix-like environment with more than 8 CPUs and a GPU, preferably Nvidia 3060 or an equivalent model. This configuration enhances computational performance.
+
 Note: Please ensure you fulfill these prerequisites before proceeding with the subsequent steps.
 
 ### Previous tutorials
