@@ -36,7 +36,7 @@ Several tutorials are available online for reference. However, based on my under
 ### This procedure
 
 The calculation of absolute binding free energy based on explicit solvent is the focus of this workflow.
-CharmmGUI has long been used for simple solution simulations, as well as ABFE calculation for NAMD, Amber and Genesis, but to when this repo was created there is no readily available module suporting the widely use Gromacs to do so.
+CharmmGUI has long been used for simple solution simulations, as well as ABFE calculation for NAMD, Amber and Genesis, but to when this repo was created there is no readily available module on CharmmGUI suporting the widely use Gromacs to do so.
 
 Architecture Overview:
 In this Double G workflow, there are three key components: CharmmGui, Gromacs, and GPU.
