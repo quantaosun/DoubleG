@@ -15,16 +15,29 @@ Taking a PDB bank structure 3HTB as an example, its native ligand is JZ4
 4. Copy the files 3.sh and 4.pbs into both the complex and solvent folders for job control. Refer to the "Job_control" folder.
 5. Modify the /toppar/LIG.itp and /toppar/PROA.itp files as needed. Instructions are available in the "PROA_or_LIG.itp_modification" folder.
 6. Convert PROA.gro or ligand.gro to PDB format using PyMOL. Open the PDB file in Maestro to identify intermolecular interactions. Add these restraints in the last section of the topol.top file. See the "Intermolecular_restrain" folder.
-7. Make necessary modifications to the solvent /MDP/PROD/ files. If encountering rlist errors or longer bonds/angles, refer to the "Known_issues" folder.
-8. Run the simulation following the instructions in the "DoubleG" folder and the relevant platform guidelines.
-9. Analyze simulation results using tools provided in the "Analysis" and "Intermolecular_restrain" folders.
+
+-This step could be helped by PLIF by generating the interaction diagram automatically
+```
+index	RESNR	RESTYPE	DIST_CALC	BOND	COLOR
+1	222	VAL	3.78	HYDROPHOBIC	GREEN
+2	294	LEU	3.8	HYDROPHOBIC	GREEN
+3	238	PHE	3.51	HYDROPHOBIC	GREEN
+4	294	LEU	3.71	HYDROPHOBIC	GREEN
+5	306	VAL	3.56	HYDROPHOBIC	GREEN
+8	241	LEU	2.86	HBOND	LIGHT BLUE
+```
+Based on the output, it narrows down the atoms that could be used as restrain anchors.
+
+8. Make necessary modifications to the solvent /MDP/PROD/ files. If encountering rlist errors or longer bonds/angles, refer to the "Known_issues" folder.
+9. Run the simulation following the instructions in the "DoubleG" folder and the relevant platform guidelines.
+10. Analyze simulation results using tools provided in the "Analysis" and "Intermolecular_restrain" folders.
 
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/ecc4ee2a-4d84-4c82-8489-57b4f8d3e62b">
 
 
-### Backgroud and introduction
+### Background and introduction
 
-What we could do is the so called alchemical free energy calculation, since this repo is more about operation rather than theory introduction, you could have a look at https://pubs.rsc.org/en/content/articlelanding/2021/sc/d1sc03472c, next we will just call it absolute binding free energy calculation (ABFE) or just calculation for simplicity, ABFE was used to clarify with the relative binding free energy calculations like what Schrodinger's FEP-Plus has provided. 
+What we could do is the so-called alchemical free energy calculation, since this repo is more about operation rather than theory introduction, you could have a look at https://pubs.rsc.org/en/content/articlelanding/2021/sc/d1sc03472c, next we will just call it absolute binding free energy calculation (ABFE) or just calculation for simplicity, ABFE was used to clarify with the relative binding free energy calculations like what Schrodinger's FEP-Plus has provided. 
 
 ABFE calculations have numerous potential applications, such as evaluating the reliability of docked poses. If a researcher is unsure which of three docked poses is the most likely correct pose, each can undergo ABFE calculations, and the one with the best score can be considered the most probable candidate. For a case study of this approach, see https://pubs.acs.org/doi/10.1021/jacs.6b11467, another good reading is https://pubs.acs.org/doi/10.1021/acs.jcim.0c00815
 
@@ -41,7 +54,7 @@ By adopting this repeatable and easy-to-set-up workflow, we aim to simplify the 
 2. Install Gromacs on a Unix-like environment with a minimum of 8 CPUs. Ideally, a decent CPU configuration is recommended.
 If available, install Gromacs on a Unix-like environment with more than 8 CPUs and a GPU, preferably Nvidia 3060 or above. This configuration enhances computational performance.
 
-Note: Please ensure you fulfill these prerequisites before proceeding with the subsequent steps.
+Note: Please ensure you fulfil these prerequisites before proceeding with the subsequent steps.
 
 ### Previous tutorials
 
@@ -53,14 +66,14 @@ Several tutorials are available online for reference. However, based on my under
 ### This procedure
 
 The calculation of absolute binding free energy based on explicit solvent is the focus of this workflow.
-CharmmGUI has long been used for simple solution simulations, as well as ABFE calculation for NAMD, Amber and Genesis, but to when this repo was created there is no readily available module on CharmmGUI suporting the widely use Gromacs to do so.
+CharmmGUI has long been used for simple solution simulations, as well as ABFE calculation for NAMD, Amber and Genesis. Still, to when this repo was created there is no readily available module on CharmmGUI supporting the widely use Gromacs to do so.
 
 Architecture Overview:
-In this Double G workflow, there are three key components: CharmmGui, Gromacs, and GPU.
+This Double G workflow has three key components: CharmmGui, Gromacs, and GPU.
 
-**CharmmGui**: This graphical user interface plays a crucial role in preparing the necessary inputs for the calculations. Compared to command-line based methods, CharmmGui offers a user-friendly interface, making it easier to learn and utilize effectively.
+**CharmmGui**: This graphical user interface plays a crucial role in preparing the necessary inputs for the calculations. Compared to command-line-based methods, CharmmGui offers a user-friendly interface, making it easier to learn and utilize effectively.
 
-**Gromacs**: One of the most widely used open-source molecular simulation packages, Gromacs, forms the core of the free energy calculations. It provides robust and reliable algorithms for performing these calculations efficiently.
+**Gromacs**: One of the most widely used open-source molecular simulation packages, Gromacs, forms the core of free energy calculations. It provides robust and reliable algorithms for performing these calculations efficiently.
 
 **GPU** Utilization: To enhance computational efficiency and save time, the workflow takes advantage of GPU computing. By leveraging the power of GPUs, the calculations can be accelerated, leading to faster results.
 
@@ -72,7 +85,7 @@ Therefore, we refer to this approach as "Double G" for easier memorization and t
 <img width="770" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/f79c176d-7d52-4b69-9b3b-6dfe4060b2db">
 
 ### Where to start with
-The stability or repeatibility of this workflow is first based on the first input generation step, which requires you to go through two independent solution builder process on CharmmGUI.
+The stability or repeatability of this workflow is first based on the first input generation step, which requires you to go through two independent solution builder process on CharmmGUI.
 
 <img width="642" alt="image" src="https://github.com/quantaosun/DoubleG/assets/75652473/d73c7b8f-8b8f-460e-8890-8f80236dbb5d">
 
