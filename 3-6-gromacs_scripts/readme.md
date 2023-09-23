@@ -1,7 +1,9 @@
-### Note, all mdp files provided are not reay to use, you need to use them as template and with the help of the scirpt below to generate multiple mdp files for each of them, replacing $LAMBDA$ by correct values that essentially controls the free energy calculation process.
-Change the lambda desity of solvent
-write 4 individual mdp file for enmin, nvt, npt, and prod
-change the 20 lambda plan to 30, also include the bonded-lambda, which allwo small molecule to be solt between bonded atoms.
+### Note, all mdp files provided are not easy to use, you need to use them as a template and with the help of the script below to generate multiple mdp files for each of them, replacing $LAMBDA$ with correct values that essentially control the free energy calculation process.
+Change the lambda density of solvent
+write 4 individual mdp files for enmin, nvt, npt, and prod
+change the 20 lambda plan to 30, and also include the bonded lambda, which allows small molecule to be solt between bonded atoms.
+
+### Build mdp file structure
 
 then duplicate each to 30 files with initial-lambda = $LAMBDA$
 
@@ -22,7 +24,7 @@ do
 done
 
 ```
-then change file name format from XX.$i.mdp to XX.a.b.mdp
+then change the file name format from XX.$i.mdp to XX.a.b.mdp
 
 ```
 for i in {0..29}
@@ -33,3 +35,16 @@ do
 done
 
 ```
+
+### Build lambda file structure
+
+```
+for (( a = 0; a <=1; a++ ));
+do 
+  for (( b = 0; b <10; b++ ))
+    do
+    mkdir lambda.$a.$b
+done
+done
+```
+The lambda simulation folder and MDP mdp file should be in such a relevant path that as shown in 3.sh
